@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This project is focused on custom object detection using the YOLOv8 model. We will annotate our custom dataset using the LabelImg tool, train the model with our annotated data on Google Colab, and finally, implement the trained model in Visual Studio Code for object detection. The objects of interest for this project are knives, handguns, and long guns.
+This project is focused on custom object detection using the YOLOv8 model. We will annotate our custom dataset using the LabelImg tool, train the model with our annotated data on Google Colab, and finally, implement the trained model in Visual Studio Code for object detection. The objects of interest for this project are knifs, handguns, and longguns.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -28,7 +28,7 @@ This project is focused on custom object detection using the YOLOv8 model. We wi
 
 1. **Clone the repository**
     ```sh
-    git clone <(https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-.git)>
+    git clone <https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-.git>
     cd <repository-directory>
     ```
 
@@ -50,12 +50,46 @@ LabelImg is an open-source graphical image annotation tool. It is written in Pyt
    - Open LabelImg.
    - Load the directory containing images.
    - Create bounding boxes around objects (knife, handgun, long gun).
-   - Save the annotations in XML format (Pascal VOC) or TXT format (YOLO).
+   - Save the annotations in XML format ( TXT format (YOLO)).
 
    This annotated data will be used to train the YOLOv8 model.
 
 3. **Export Annotations**
    - Ensure all annotations are correctly saved in the desired format.
+  
+# Directory Structure
+Dataset Root Directory:
+dataset/
+     train/
+          images/
+          labels.txt
+     val/
+          images/
+          labels.txt
+Detailed Structure
+Training Data:
+
+dataset/train/images/: This directory contains all the images for training.
+dataset/train/labels.txt: This file contains the labels for each training image.
+Validation Data:
+
+dataset/val/images/: This directory contains all the images for validation.
+dataset/val/labels.txt: This file contains the labels for each validation image.
+
+ dataset/
+├── train/
+│   ├── images/
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   └── ...
+│   └── labels.txt
+└── val/
+    ├── images/
+    │   ├── image1.jpg
+    │   ├── image2.jpg
+    │   └── ...
+    └── labels.txt
+
 
 ## Training YOLOv8 Model
 
@@ -121,8 +155,13 @@ To utilize the trained YOLOv8 model for detection, follow these steps:
 
 ## Image Samples
 
-![Sample Image 1](path/to/image1.jpg)
-![Sample Image 2](path/to/image2.jpg)
+
+![frame44](https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-/assets/133520487/c62c6623-b28b-4905-a63c-b456de9d987f)
+
+![knife](https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-/assets/133520487/e04c7816-e8d6-47ff-8b1a-2ca16b1e5f03)
+
+
+![longun44](https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-/assets/133520487/c92f086c-f0f7-408c-b4c6-ddb53fbacd3f)
 
 ## Conclusion
 
