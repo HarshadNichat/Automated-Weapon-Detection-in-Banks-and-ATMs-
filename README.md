@@ -28,7 +28,7 @@ This project is focused on custom object detection using the YOLOv8 model. We wi
 
 1. **Clone the repository**
     ```sh
-    git clone <repository-url>
+    git clone <(https://github.com/HarshadNichat/Automated-Weapon-Detection-in-Banks-and-ATMs-.git)>
     cd <repository-directory>
     ```
 
